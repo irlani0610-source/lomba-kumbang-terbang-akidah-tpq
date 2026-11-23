@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lomba Kumbang – Akidah Akhlak TPQ Kelas 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--card:#fffdf6;--ink:#3b2a63;--bg:#cfeeff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--card:#2b2150;--ink:#fff3d6;--bg:#1d1640}}
+:root[data-theme=dark]{--card:#2b2150;--ink:#fff3d6;--bg:#1d1640}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 1.05rem/1.4 'Baloo 2','Comic Sans MS',system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:12px}
+[hidden]{display:none!important}
+.btn{border:0;border-radius:22px;padding:12px 22px;font:800 1.25rem 'Baloo 2','Comic Sans MS',sans-serif;color:#fff;background:linear-gradient(#ff8fbd,#ff4f93);box-shadow:0 6px 0 #c42c6b,inset 0 3px 0 rgba(255,255,255,.5);cursor:pointer}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #c42c6b}
+.btn.g{background:linear-gradient(#7be07a,#2fa84f);box-shadow:0 6px 0 #1b7a36,inset 0 3px 0 rgba(255,255,255,.5)}
+.btn:focus-visible,.op:focus-visible,input:focus-visible{outline:4px solid #ffc83d;outline-offset:2px}
+.panel{background:var(--card);border-radius:28px;padding:22px;box-shadow:0 8px 0 rgba(60,30,110,.25);border:4px solid #fff}
+#start{text-align:center;padding-top:8px}
+#start h1{font-size:2.2rem;line-height:1.1;margin:6px 0;color:#e2336f}
+#start .hero{font-size:4rem}
+label{display:block;text-align:left;font-weight:800;margin:10px 0 2px}
+input{width:100%;padding:10px 14px;border-radius:16px;border:3px solid #b9a6ff;font:600 1.2rem 'Baloo 2',sans-serif;background:#fff;color:#3b2a63}
+#er{color:#d6204f;min-height:1.4em;font-weight:700}
+#hd{display:flex;justify-content:space-between;gap:8px;align-items:center;background:var(--card);border-radius:20px;padding:8px 14px;margin-bottom:10px;font-weight:800;flex-wrap:wrap}
+#hd .s{background:#ffc83d;color:#5a3a00;border-radius:14px;padding:2px 14px;box-shadow:0 3px 0 #d99a00}
+#scene{position:relative;height:290px;border-radius:28px;overflow:hidden;border:4px solid #fff;box-shadow:0 8px 0 rgba(60,30,110,.25);background:var(--sk,#6fcdff)}
+#scene.l0{--sk:linear-gradient(#6fcdff,#d6f3ff 70%)}#scene.l1{--sk:linear-gradient(#ffa87a,#fff0d6 70%)}
+#scene.l2{--sk:linear-gradient(#6fdcb8,#e4fff3 70%)}#scene.l3{--sk:linear-gradient(#9d8cff,#ffd2ec 70%)}
+#scene:before{content:"";position:absolute;right:6%;top:8%;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff7b0,#ffc83d);box-shadow:0 0 40px #ffe27a}
+.cl{position:absolute;top:14%;left:12%;width:70px;height:26px;border-radius:30px;background:#fff;box-shadow:28px -12px 0 6px #fff,50px 2px 0 0 #fff;opacity:.9}
+.hill{position:absolute;bottom:-50px;left:-10%;width:120%;height:140px;border-radius:50%;background:radial-gradient(circle at 40% 20%,#8fe88a,#2fa84f)}
+.grass{position:absolute;bottom:0;left:0;right:0;height:26px;background:linear-gradient(#3cba5a,#1f8a3d)}
+.fl{position:absolute;bottom:14px;width:70px;transform:translateX(-50%)}
+.fl svg{display:block;filter:drop-shadow(0 4px 2px rgba(0,0,0,.2))}
+.fl .st{position:absolute;left:50%;top:60px;width:9px;margin-left:-4px;background:linear-gradient(90deg,#2a9d4a,#6ee27f);border-radius:5px;z-index:-1}
+.fl .no{position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);font-size:.8rem;font-weight:800;color:#fff;text-shadow:0 1px 2px #0006}
+#bt{position:absolute;width:58px;transform:translateX(-50%);transition:left .9s cubic-bezier(.3,1.2,.5,1),bottom .9s cubic-bezier(.3,1.2,.5,1);z-index:5;left:5%;bottom:40px}
+#bt .bi{animation:bob 1.4s ease-in-out infinite}#bt svg{display:block;filter:drop-shadow(0 5px 3px rgba(0,0,0,.25))}
+.wing{transform-origin:40px 30px;animation:fl .1s infinite alternate}
+@keyframes fl{to{transform:scaleY(.55)}}@keyframes bob{50%{transform:translateY(-5px)}}
+#bt .bi.hop{animation:hop .6s}@keyframes hop{50%{transform:translateY(-34px) scale(1.15)}}
+#bt .bi.fall{animation:fall 1.1s ease-in forwards}@keyframes fall{to{transform:translateY(170px) rotate(620deg);opacity:.2}}
+.pt{position:absolute;top:-30px;font-size:1.6rem;animation:pt 3.4s linear forwards;z-index:6}
+@keyframes pt{to{transform:translateY(340px) rotate(360deg)}}
+#card{margin-top:14px}
+.meta{display:flex;justify-content:space-between;font-weight:800;font-size:.95rem}
+.meta span{background:#ede6ff;color:#3b2a63;border-radius:12px;padding:0 12px}
+.qe{font-size:3rem;text-align:center;line-height:1.1;margin-top:6px}
+.qt{font-size:1.45rem;font-weight:800;text-align:center;margin:4px 0 12px}
+.sp{border:0;background:#ffc83d;border-radius:50%;width:38px;height:38px;font-size:1.1rem;cursor:pointer;vertical-align:middle}
+.ans{display:grid;gap:10px;grid-template-columns:1fr}
+.op{border:4px solid #b9a6ff;background:var(--card);color:var(--ink);border-radius:20px;padding:10px 14px;font:800 1.3rem 'Baloo 2',sans-serif;text-align:left;cursor:pointer;box-shadow:0 5px 0 #b9a6ff}
+.op b{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:#ffc83d;color:#5a3a00;margin-right:8px}
+.op .em{font-size:1.7rem;margin-right:10px;vertical-align:middle}
+.op.ok{border-color:#2fa84f;background:#d8ffe0;color:#12541f;box-shadow:0 5px 0 #2fa84f}
+.op.no{border-color:#e0344f;background:#ffe0e5;color:#7a0f26;box-shadow:0 5px 0 #e0344f}
+.hint{text-align:center;font-size:1.6rem;letter-spacing:2px;font-weight:800}
+.fb{margin-top:10px;text-align:center;font-weight:800;font-size:1.2rem;padding:8px;border-radius:16px}
+.fb.y{background:#d8ffe0;color:#12541f}.fb.n{background:#ffe0e5;color:#7a0f26}
+#ov{position:fixed;inset:0;background:rgba(40,20,90,.6);display:flex;align-items:center;justify-content:center;padding:16px;z-index:20}
+.box{background:var(--card);border-radius:28px;padding:24px;max-width:420px;text-align:center;border:4px solid #fff;box-shadow:0 8px 0 rgba(0,0,0,.3)}
+.box h2{margin:0;font-size:2rem;color:#e2336f}.big{font-size:2rem;font-weight:800;margin:4px 0}
+.res{text-align:center}.res .sc{font-size:3.4rem;font-weight:800;color:#e2336f;line-height:1}
+.row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.cert{background:#fffbea;border:14px double #d99a00;padding:28px 20px;text-align:center;color:#3b2a63;border-radius:6px}
+.cert h1{font-size:3rem;margin:0;color:#e2336f;letter-spacing:4px}.cert h2{font-size:2.4rem;margin:0;border-bottom:3px dotted #d99a00;display:inline-block;padding:0 24px}
+.cert .big{color:#e2336f;font-size:3.6rem}.cert .ce{font-size:2.4rem}.cert .sig{margin-top:18px}
+@media(min-width:640px){.ans.c3{grid-template-columns:repeat(3,1fr)}.ans.c2{grid-template-columns:1fr 1fr}.op{text-align:center}.op b{display:none}}
+@media(prefers-reduced-motion:reduce){.wing,#bt .bi{animation-duration:.01s}}
+@media print{@page{size:A4 landscape;margin:8mm}body>.wrap>:not(#certS){display:none!important}#certS .noprint{display:none}.cert{-webkit-print-color-adjust:exact;print-color-adjust:exact;border-width:16px}body{background:#fff}}
+</style></head><body><div class="wrap">
+
+<section id="start" class="panel scr">
+<div class="hero">🐞🌸🕌</div>
+<h1>Lomba Kumbang di Taman Bunga</h1>
+<p>Akidah Akhlak · TPQ Kelas 1 SD<br>Jawab 40 soal, bantu kumbang hinggap di mahkota bunga!</p>
+<label for="nm">Nama</label><input id="nm" maxlength="40" autocomplete="off" placeholder="Tulis namamu">
+<label for="kl">Kelas</label><input id="kl" maxlength="10" autocomplete="off" placeholder="Contoh: 1A">
+<p id="er" role="alert"></p>
+<button class="btn" id="go">Mulai Lomba!</button>
+</section>
+
+<section id="play" class="scr" hidden>
+<div id="hd"><span id="hn"></span><span id="hl"></span><span class="s">⭐ Skor: <span id="sc">0</span></span></div>
+<div id="scene"><div class="cl"></div><div class="hill"></div><div class="grass"></div>
+<div id="bt"><div class="bi"><svg viewBox="0 0 80 80" width="58" aria-label="Kumbang"><defs><radialGradient id="bg" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ff9a9a"/><stop offset="1" stop-color="#d81b3c"/></radialGradient></defs>
+<g class="wing"><ellipse cx="24" cy="30" rx="17" ry="9" fill="#fff" opacity=".65" transform="rotate(-30 24 30)"/><ellipse cx="56" cy="30" rx="17" ry="9" fill="#fff" opacity=".65" transform="rotate(30 56 30)"/></g>
+<ellipse cx="40" cy="50" rx="24" ry="22" fill="url(#bg)"/><path d="M40 30v42" stroke="#7a0f26" stroke-width="2"/>
+<circle cx="29" cy="48" r="4" fill="#2a1a3a"/><circle cx="51" cy="48" r="4" fill="#2a1a3a"/><circle cx="33" cy="61" r="3" fill="#2a1a3a"/><circle cx="47" cy="61" r="3" fill="#2a1a3a"/>
+<circle cx="40" cy="26" r="15" fill="#3a2860"/><circle cx="34" cy="24" r="6.5" fill="#fff"/><circle cx="46" cy="24" r="6.5" fill="#fff"/><circle cx="35" cy="25" r="3.4" fill="#222"/><circle cx="45" cy="25" r="3.4" fill="#222"/><circle cx="36" cy="23.5" r="1.2" fill="#fff"/><circle cx="46" cy="23.5" r="1.2" fill="#fff"/>
+<path d="M35 32q5 5 10 0" stroke="#fff" fill="none" stroke-width="2" stroke-linecap="round"/><path d="M33 13q-6-9-11-6M47 13q6-9 11-6" stroke="#3a2860" fill="none" stroke-width="2.5" stroke-linecap="round"/></svg></div></div>
+</div>
+<div id="card" class="panel"></div>
+</section>
+
+<section id="certS" class="scr" hidden></section>
+</div>
+<div id="ov" hidden></div>
+
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const shuf=a=>a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]);
+const PL={"Nabi Adam":"🌿","Allah":"☝️","Kapal":"🚢","Dua":"✌️","Malaikat":"👼","Bersih":"🧼","Rukun":"🤝","Nabi Nuh":"🌧️","Menyayangi":"💖","Rapi":"👕"};
+const M=(e,q,o,a)=>({t:'mc',e,q,o,a}),F=(e,q,a)=>({t:'fill',e,q,a}),J=(e,q,a)=>({t:'match',e,q,a}),T=(e,q,a)=>({t:'tf',e,q,a});
+const LV=[
+{n:'Level 1',s:'Sangat Mudah',qs:[
+M('🌳','Siapakah yang menciptakan langit, bumi, manusia, dan hewan?',['Manusia','Malaikat','Allah'],2),
+M('🕌','Rukun iman yang pertama adalah iman kepada ....',['Malaikat','Allah','Rasul'],1),
+M('🧒','Ketika bermain bersama teman, kita harus ....',['Bertengkar','Rukun dan saling menyayangi','Saling mengejek'],1),
+F('🍽️','Sebelum makan, kita harus mencuci ....',['tangan']),
+F('🛁','Mandi berguna untuk membersihkan ....',['tubuh','badan']),
+J('🧼','Setelah mandi, tubuh menjadi ....','Bersih'),
+J('🚢','Kendaraan besar yang dibuat Nabi Nuh adalah ....','Kapal'),
+T('🗑️','Kita boleh membuang sampah sembarangan.',false),
+T('🛁','Mandi membuat tubuh menjadi kotor.',false),
+T('❤️','Kita harus menyayangi teman.',true)]},
+{n:'Level 2',s:'Mudah',qs:[
+M('🧹','Agar tubuh sehat, kita harus selalu ....',['Menjaga kebersihan','Membuang sampah sembarangan','Malas mandi'],0),
+M('👕','Ketika memakai pakaian, kita sebaiknya mendahulukan bagian ....',['Kiri','Kanan','Belakang'],1),
+M('🚢','Nabi yang membuat kapal besar atas perintah Allah adalah ....',['Nabi Adam','Nabi Nuh','Nabi Ibrahim'],1),
+F('🤝','Kepada teman, kita harus saling ....',['menyayangi','mengasihi','sayang','menyayangi']),
+F('👔','Kita harus memakai pakaian yang bersih dan ....',['rapi']),
+F('🌧️','Nabi Nuh membuat sebuah ....',['kapal','perahu']),
+J('👕','Pakaian yang disusun dengan baik terlihat ....','Rapi'),
+J('❤️','Kita harus saling .... kepada sesama teman.','Menyayangi'),
+T('👕','Kita dianjurkan memakai pakaian bersih dan rapi.',true),
+T('☝️','Allah ada banyak.',false)]},
+{n:'Level 3',s:'Sedang',qs:[
+M('🌙','Ada berapa jumlah Rukun Iman?',['4','5','6'],2),
+M('🛁','Sebelum mandi, kita sebaiknya menyiapkan ....',['Sabun dan handuk','Mainan dan permen','Buku dan pensil'],0),
+F('🌙','Jumlah Rukun Iman ada .... perkara.',['enam','6']),
+F('☝️','Allah Maha Esa artinya Allah itu ....',['satu','esa','1']),
+F('🌍','Allah adalah Maha ....',['pencipta','pengasih','penyayang']),
+J('✨','Makhluk Allah yang diciptakan dari cahaya adalah ....','Malaikat'),
+J('🕊️','Hidup bersama tanpa bertengkar disebut ....','Rukun'),
+J('🌳','Nabi pertama yang diciptakan Allah adalah ....','Nabi Adam'),
+T('🤲','Syahadatain terdiri dari dua kalimat syahadat.',true),
+T('🌿','Nabi Adam adalah manusia pertama.',true)]},
+{n:'Level 4',s:'Sulit',qs:[
+M('🤲','Syahadatain terdiri dari ... kalimat syahadat.',['Satu','Dua','Tiga'],1),
+M('☝️','Allah itu Maha Esa. Artinya Allah itu ....',['Satu','Dua','Banyak'],0),
+F('📿','Kalimat syahadat yang pertama disebut syahadat ....',['tauhid']),
+F('🌿','Nabi Adam adalah manusia dan nabi yang ....',['pertama']),
+J('☝️','Yang Maha Esa dan hanya satu adalah ....','Allah'),
+J('⛵','Nabi yang berdakwah kepada kaumnya agar beriman kepada Allah, lalu membuat kapal, adalah ....','Nabi Nuh'),
+J('🤲','Syahadatain memiliki arti .... kalimat syahadat.','Dua'),
+T('🌙','Rukun Iman berjumlah enam.',true),
+T('🌍','Allah adalah pencipta seluruh alam.',true),
+T('🚢','Nabi Nuh membuat kapal atas perintah Allah.',true)]}];
+
+/* nada */
+let AC;function tone(f,t,d,ty='sine',v=.2){AC=AC||new(window.AudioContext||window.webkitAudioContext)();const o=AC.createOscillator(),g=AC.createGain(),s=AC.currentTime+t;o.type=ty;o.frequency.value=f;g.gain.setValueAtTime(v,s);g.gain.exponentialRampToValueAtTime(.001,s+d);o.connect(g);g.connect(AC.destination);o.start(s);o.stop(s+d+.05)}
+const sfx={ok:()=>[523,659,784,1047].forEach((f,i)=>tone(f,i*.1,.25,'triangle')),
+bad:()=>[330,262,196,147].forEach((f,i)=>tone(f,i*.16,.3,'sawtooth',.1)),
+win:()=>[523,523,659,784,659,784,1047,988,1047,1319].forEach((f,i)=>tone(f,i*.17,.3,'triangle',.22)),
+fly:()=>[880,1175,1568].forEach((f,i)=>tone(f,i*.07,.15,'sine',.1))};
+
+/* taman */
+const X=i=>13+i*8.6,H=i=>30+i*9+(i%2?16:0),COL=[['#ff9ac2','#e2336f'],['#ffb36b','#f26b1d'],['#ffe36b','#f0a500'],['#9ae88a','#2fa84f'],['#8fd8ff','#1f8fe0'],['#b9a6ff','#6b4de0'],['#ff9ac2','#c42c8a'],['#ff8f8f','#d81b3c'],['#ffd27a','#e08a00'],['#d7a6ff','#9b3de0']];
+function flower(i){let p='';for(let a=0;a<360;a+=60)p+=`<ellipse cx="40" cy="17" rx="11" ry="17" fill="url(#f${i})" transform="rotate(${a} 40 40)"/>`;
+return`<svg viewBox="0 0 80 80" width="70"><defs><radialGradient id="f${i}" cx=".5" cy=".3" r=".8"><stop offset="0" stop-color="${COL[i][0]}"/><stop offset="1" stop-color="${COL[i][1]}"/></radialGradient></defs>${p}<circle cx="40" cy="40" r="12" fill="#ffd54a" stroke="#f0a500" stroke-width="2"/><circle cx="36" cy="36" r="4" fill="#fff" opacity=".6"/></svg>`}
+for(let i=0;i<10;i++){const d=document.createElement('div');d.className='fl';d.style.left=X(i)+'%';d.style.height=(H(i)+70)+'px';d.innerHTML=`<div class="st" style="height:${H(i)+14}px"></div>${flower(i)}`+(i==9?'<span style="position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:1.5rem">🏁</span>':'');$('#scene').insertBefore(d,$('#bt'))}
+const bt=$('#bt'),bi=bt.querySelector('.bi');
+function setPos(i,a){bt.style.left=(i<0?5:X(i))+'%';bt.style.bottom=(i<0?36:H(i)+46)+'px';if(a){bi.classList.remove('hop');void bi.offsetWidth;bi.classList.add(a)}}
+
+/* permainan */
+let G,PT;
+function show(id){document.querySelectorAll('.scr').forEach(e=>e.hidden=e.id!=id)}
+function fmt(x){return Number.isInteger(x)?x:x.toFixed(1)}
+function ov(html,btn,fn){const o=$('#ov');o.hidden=false;o.innerHTML='<div class="box">'+html+'<div class="row"><button class="btn g" id="ob">'+btn+'</button></div></div>';$('#ob').onclick=()=>{o.hidden=true;fn()};$('#ob').focus()}
+function start(){const n=$('#nm').value.trim(),k=$('#kl').value.trim();if(!n||!k){$('#er').textContent='Isi nama dan kelas dulu ya!';return}
+clearInterval(PT);document.querySelectorAll('.pt').forEach(e=>e.remove());G={n,k,lv:0,i:0,sc:0,ok:0,pos:-1,q:[],lock:false};$('#hn').textContent='🐞 '+n+' · Kelas '+k;$('#sc').textContent='0';show('play');lvStart();sfx.fly()}
+function lvStart(){const L=LV[G.lv];G.q=shuf(L.qs);G.i=0;G.pos=-1;$('#scene').className='l'+G.lv;setPos(-1);$('#card').innerHTML='';$('#hl').textContent=L.n+' · '+L.s;
+ov(`<h2>${L.n}</h2><p class="big">${L.s}</p><p>Ada 10 soal. Jawaban benar membuat kumbang hinggap di bunga!</p>`,'Mulai Level',ask)}
+function ask(){G.lock=false;const q=G.q[G.i];
+const lab={mc:'Pilihan Ganda',fill:'Isian Singkat',match:'Pasangkan Jawaban',tf:'Benar atau Salah'}[q.t];let a='',cls='';
+if(q.t=='mc'){a=q.o.map((o,i)=>`<button class="op" data-i="${i}"><b>${'ABC'[i]}</b>${esc(o)}</button>`).join('');q.ci=q.a;q.right=q.o[q.a];cls='c3'}
+if(q.t=='tf'){a='<button class="op" data-i="1">✅ BENAR</button><button class="op" data-i="0">❌ SALAH</button>';q.ci=q.a?1:0;q.right=q.a?'BENAR':'SALAH';cls='c2'}
+if(q.t=='match'){q.o=shuf([q.a,...shuf(Object.keys(PL).filter(k=>k!=q.a)).slice(0,2)]);q.ci=q.o.indexOf(q.a);q.right=q.a;cls='c3';a=q.o.map((o,i)=>`<button class="op" data-i="${i}"><span class="em">${PL[o]}</span>${o}</button>`).join('')}
+if(q.t=='fill'){q.right=q.a[0];a=`<div class="hint">${'＿ '.repeat(q.a[0].length)}</div><input id="fi" autocomplete="off" autocapitalize="none" aria-label="Jawabanmu"><button class="btn" id="fb">Jawab</button>`}
+$('#card').innerHTML=`<div class="meta"><span>Soal ${G.i+1} dari 10</span><span>${lab}</span></div><div class="qe">${q.e}</div><p class="qt">${esc(q.q)} <button class="sp" id="sp" aria-label="Bacakan soal">🔊</button></p><div class="ans ${cls}">${a}</div><div id="fbk"></div>`;
+$('#sp').onclick=()=>say(q);
+if(q.t=='fill'){const go=()=>{const v=$('#fi').value.toLowerCase().replace(/[^a-z0-9]/g,'');if(!v||G.lock)return;ans(q.a.includes(v),q.right)};$('#fb').onclick=go;$('#fi').onkeydown=e=>{if(e.key=='Enter')go()};$('#fi').focus()}
+else document.querySelectorAll('.op').forEach(b=>b.onclick=()=>{if(G.lock)return;const i=+b.dataset.i,ok=i==q.ci;document.querySelectorAll('.op').forEach(x=>{if(+x.dataset.i==q.ci)x.classList.add('ok')});if(!ok)b.classList.add('no');ans(ok,q.right)})}
+function say(q){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(q.q.replace(/\.{3,}/g,' titik titik ')+(q.t=='mc'?' '+q.o.join(', atau ')+'?':''));u.lang='id-ID';u.rate=.85;speechSynthesis.speak(u)}catch(e){}}
+function ans(ok,right){if(G.lock)return;G.lock=true;try{speechSynthesis.cancel()}catch(e){}
+const f=$('#fbk');
+if(ok){G.sc+=2.5;G.ok++;G.pos++;sfx.ok();setPos(G.pos,'hop');f.className='fb y';f.textContent='Hebat! Kumbang hinggap di bunga ke-'+(G.pos+1)+' 🌸'}
+else{sfx.bad();bi.classList.remove('hop');bi.classList.add('fall');setTimeout(()=>{bi.classList.remove('fall');setPos(G.pos,'hop')},1150);f.className='fb n';f.textContent='Yah, kumbang jatuh! Jawaban yang benar: '+right}
+$('#sc').textContent=fmt(G.sc);setTimeout(next,2400)}
+function next(){G.i++;if(G.i<10)return ask();$('#card').innerHTML='';const L=LV[G.lv];
+if(G.lv<3)ov(`<h2>🎉 ${L.n} selesai!</h2><p>Kumbang hinggap di ${G.pos+1} dari 10 bunga.<br>Skor sekarang: <b>${fmt(G.sc)}</b></p>`,'Lanjut ke '+LV[G.lv+1].n,()=>{G.lv++;lvStart()});else finish()}
+function finish(){const win=G.sc>=60,st=G.sc>=90?3:G.sc>=75?2:1;let h;
+if(win){setPos(9,'hop');setTimeout(()=>{sfx.win();party()},900);
+h=`<div class="res"><div style="font-size:2.6rem">${'⭐'.repeat(st)}</div><h2 style="margin:0;color:#e2336f">Selamat, ${esc(G.n)}! Kamu Juara!</h2><p>Kumbang sampai di bunga terakhir dan terbang riang 🐞🌸</p><div class="sc">${fmt(G.sc)}</div><p>Skor total dari 100 · Benar ${G.ok} dari 40 soal</p><div class="row"><button class="btn g" id="ct">🏆 Sertifikat</button><button class="btn" id="ag">Main Lagi</button></div></div>`}
+else{sfx.bad();h=`<div class="res"><div style="font-size:2.6rem">💪🐞</div><h2 style="margin:0;color:#e2336f">Ayo coba lagi, ${esc(G.n)}!</h2><p>Kumbang belum sampai bunga terakhir. Butuh skor 60 atau lebih untuk menang.</p><div class="sc">${fmt(G.sc)}</div><p>Skor total dari 100 · Benar ${G.ok} dari 40 soal</p><div class="row"><button class="btn" id="ag">Main Lagi</button></div></div>`}
+$('#card').innerHTML=h;$('#ag').onclick=()=>{clearInterval(PT);document.querySelectorAll('.pt').forEach(e=>e.remove());setPos(-1);show('start')};if(win)$('#ct').onclick=cert}
+function party(){const sc=$('#scene');let n=0;PT=setInterval(()=>{bt.style.left=(8+Math.random()*84)+'%';bt.style.bottom=(70+Math.random()*170)+'px';sfx.fly();if(n++%4==0)[784,988,1175,1568].forEach((f,i)=>tone(f,i*.12,.25,'triangle',.12));
+const p=document.createElement('span');p.className='pt';p.textContent=['🌸','🌼','💖','⭐'][n%4];p.style.left=Math.random()*92+'%';sc.appendChild(p);setTimeout(()=>p.remove(),3500)},900)}
+function cert(){const d=new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'});
+$('#certS').innerHTML=`<div class="cert"><div class="ce">🌸🐞🌼</div><h1>SERTIFIKAT</h1><p class="big" style="color:#3b2a63;font-size:1.5rem">Juara Lomba Kumbang di Taman Bunga</p><p>Diberikan kepada</p><h2>${esc(G.n)}</h2><p>Kelas ${esc(G.k)}</p><p>atas keberhasilannya menjawab soal Akidah Akhlak TPQ Kelas 1 SD<br>dan membawa kumbang sampai ke bunga terakhir dengan skor</p><div class="big">${fmt(G.sc)}</div><p>${d}</p><div class="sig">Ustadz/Ustadzah<br><br><b>(................................)</b></div></div><div class="row noprint"><button class="btn g" onclick="window.print()">🖨️ Cetak Sertifikat</button><button class="btn" id="bk">Kembali</button></div>`;
+show('certS');$('#bk').onclick=()=>show('play')}
+$('#go').onclick=start;$('#kl').onkeydown=$('#nm').onkeydown=e=>{if(e.key=='Enter')start()};
+</script></body></html>
